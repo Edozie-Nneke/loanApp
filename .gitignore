@@ -1,8 +1,18 @@
 # Directories to ignore
 
-wp-content/plugins/
+wp-content/plugins/akismet/
+wp-content/plugins/elementor/
+wp-content/plugins/elementor-pro/
+wp-content/plugins/if-menu/
+wp-content/plugins/woocommerce/
+wp-content/plugins/akismet/
 
-wp-content/themes/
+
+wp-content/themes/responsive/
+wp-content/themes/twentytwentyone/
+wp-content/themes/twentytwentytwo/
+wp-content/themes/twentytwentythree/
+
 
 wp-content/cache/
 
