@@ -1,14 +1,10 @@
-// var getUrl = window.location;
-// var baseURL_signup =
-//   getUrl.protocol + '//' + getUrl.host + '/' + getUrl.pathname.split('/')[1];
-
-// if (baseURL_signup.startsWith('https')) {
-//   baseURL_signup = getUrl.protocol + '//' + getUrl.host;
-// }
-
 let baseURL_signup = 'http://localhost/loanApp/index.php';
 
-function signupLoanUser() {
+let isLoggedIn = phpObj.isLogedIn;
+
+function signUpUserData() {
+  console.log(isLoggedIn);
+
   return {
     firstName: '',
     lastName: '',
