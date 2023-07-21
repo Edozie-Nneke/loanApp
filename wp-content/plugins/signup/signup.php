@@ -28,8 +28,8 @@ function signup()
 
 ?>
 
-  <section x-data="signUpUserData()" class="container">
-    <!-- <div id="toastbox" x-ref="">Hello</div> -->
+  <section x-data="signUpUserData();" class="container">
+
     <form @submit.prevent="signup();">
       <div class="row my-3">
         <div class="col-sm-6">
@@ -55,7 +55,7 @@ function signup()
 
       <div class="row my-3">
         <div class="col-sm-6">
-          <button type="submit" class="btn-success">Sign up</button>
+          <button type="submit" class="btn-success signupBtn">Sign up</button>
         </div>
       </div>
     </form>

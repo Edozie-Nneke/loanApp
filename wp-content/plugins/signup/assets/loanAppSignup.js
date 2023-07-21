@@ -3,8 +3,6 @@ let baseURL_signup = 'http://localhost/loanApp/index.php';
 let isLoggedIn = phpObj.isLogedIn;
 
 function signUpUserData() {
-  console.log(isLoggedIn);
-
   return {
     firstName: '',
     lastName: '',
