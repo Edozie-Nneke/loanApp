@@ -1,4 +1,4 @@
-let baseURL_signup = 'http://localhost/my_loan_app/index.php';
+let baseURL_getLoan = 'http://localhost/my_loan_app/index.php';
 
 function getLoanData() {
   return {

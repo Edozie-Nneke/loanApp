@@ -102,7 +102,7 @@ function changeBtnLinkOnUserLogin()
 		return wp_logout_url(home_url());
 	} else {
 
-		return $base_link;
+		return $base_link . '/index.php/sign-in/';
 	}
 }
 add_shortcode('changeBtnLinkOnUserLogin', 'changeBtnLinkOnUserLogin');
