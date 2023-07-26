@@ -68,6 +68,8 @@ add_filter('script_loader_tag', 'defer_alpine_js', 10, 2);
 
 include ABSPATH . 'wp-content/themes/responsive-child/api/signup_loan_user.php';
 
+// include ABSPATH . 'wp-content/themes/responsive-child/api/request_loan.php';
+
 
 
 /**

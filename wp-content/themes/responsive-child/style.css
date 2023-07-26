@@ -20,3 +20,8 @@ Updated: 2023-07-14 07:48:17
   padding: 1rem 2rem !important;
   border-radius: 0.5rem !important;
 }
+
+.prompt_msg p {
+  font-weight: 500;
+  font-size: 0.875rem;
+}

@@ -56,6 +56,9 @@ function signup()
       <div class="row my-3">
         <div class="col-sm-6">
           <button type="submit" class="btn-success signupBtn">Sign up</button>
+          <div class="my-2 prompt_msg">
+            <p x-text="signup_msg"></p>
+          </div>
         </div>
       </div>
     </form>

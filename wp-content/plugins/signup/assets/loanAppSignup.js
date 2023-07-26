@@ -8,6 +8,7 @@ function signUpUserData() {
     lastName: '',
     email: '',
     password: '',
+    signup_msg: '',
 
     async postASYNCFunc(url = '', data = {}) {
       const response = await fetch(url, {
@@ -26,6 +27,7 @@ function signUpUserData() {
     },
 
     signup() {
+      this.signup_msg = '';
       const userData = {
         firstname: this.firstName,
         lastname: this.lastName,
@@ -39,12 +41,16 @@ function signUpUserData() {
       )
         .then((res) => {
           console.log(res);
+          this.signup_msg = 'Sign up Successful';
 
-          window.location.replace(`${baseURL_signup}`);
-
-          //  window.location.replace(`${baseURL_signup}/index.php/sign-in`);
+          setTimeout(() => {
+            window.location.replace(`${baseURL_signup}/index.php/sign-in`);
+          }, 5000);
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          this.signup_msg = 'Unable to register. Please try again';
+          console.log(err);
+        });
     },
   };
 }
